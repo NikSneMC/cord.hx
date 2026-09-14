@@ -1,0 +1,69 @@
+name: CI
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+    branches: [master]
+
+env:
+  CARGO_TERM_COLOR: always
+
+jobs:
+  lint:
+    name: Format & lint
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      # installs the toolchain from rust-toolchain.toml
+      - uses: actions-rust-lang/setup-rust-toolchain@v1
+        with:
+          components: rustfmt, clippy
+
+      - name: Check formatting
+        run: cargo fmt --check
+
+      - name: Clippy
+        run: cargo clippy --release --lib -- -D warnings
+
+  build:
+    name: Build ${{ matrix.platform }}
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - os: ubuntu-latest
+            platform: x86_64-linux
+          - os: ubuntu-24.04-arm
+            platform: aarch64-linux
+          - os: macos-15-intel
+            platform: x86_64-macos
+          - os: macos-latest
+            platform: aarch64-macos
+          - os: windows-latest
+            platform: x86_64-windows
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions-rust-lang/setup-rust-toolchain@v1
+
+      - name: Build
+        run: cargo build --release
+
+      - name: Test
+        run: cargo test --release --lib
+
+  nix:
+    name: Nix flake check
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: DeterminateSystems/nix-installer-action@main
+
+      - uses: DeterminateSystems/magic-nix-cache-action@main
+
+      - name: Check
+        run: nix flake check -L

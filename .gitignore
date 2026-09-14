@@ -1,3 +1,5 @@
-/.vscode
 /target
+/.vscode
 .direnv/
+result
+result-*

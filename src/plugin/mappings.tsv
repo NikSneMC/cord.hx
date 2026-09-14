@@ -1,0 +1,262 @@
+# Icon mappings: kind, key, type, icon, tooltip (tab separated).
+#
+# * filetype: Helix language names
+# * filename: lowercase file names
+# * extension: everything from the first dot of a file name
+# * cord: special filetypes of cord itself
+# * cli: commands focused next to Helix, in its tmux window or zellij tab
+# * default: default icon per type (tooltip unused)
+default	language	language	text	
+default	file-browser	file-browser	folder	
+default	plugin-manager	plugin-manager	plugin	
+default	lsp	lsp	server	
+default	docs	docs	book	
+default	vcs	vcs	git	
+default	notes	notes	notes	
+default	debug	debug	bug	
+default	test	test	test	
+default	diagnostics	diagnostics	diagnostic	
+default	games	games	controller	
+default	terminal	terminal	shell	
+default	dashboard	dashboard	dashboard	
+filetype	ada	language	ada	Ada
+filetype	angular	language	angular	Angular
+filetype	asm68k	language	assembly	Assembly
+filetype	asmh8300	language	assembly	Assembly
+filetype	astro	language	astro	Astro
+filetype	autohotkey	language	autohotkey	AutoHotkey
+filetype	automake	language	gnu	Automake
+filetype	awk	language	awk	Awk
+filetype	bash	language	shell	Shell script
+filetype	c	language	c	C 
+filetype	c-sharp	language	csharp	C#
+filetype	checkhealth	language	health	Health Check
+filetype	clojure	language	clojure	Clojure
+filetype	cmake	language	cmake	CMake
+filetype	common-lisp	language	lisp	Lisp
+filetype	conf	language	settings	Config
+filetype	config	language	settings	Config
+filetype	cpp	language	cpp	C++
+filetype	crystal	language	crystal	Crystal
+filetype	css	language	css	CSS
+filetype	d	language	d	D 
+filetype	dart	language	dart	Dart
+filetype	diff	language	diff	Diff
+filetype	dockerfile	language	docker	Docker
+filetype	dosbatch	language	shell	Batch
+filetype	editorconfig	language	editorconfig	EditorConfig
+filetype	eex	language	elixir	Embedded Elixir
+filetype	elixir	language	elixir	Elixir
+filetype	elm	language	elm	Elm
+filetype	erlang	language	erlang	Erlang
+filetype	fennel	language	fennel	Fennel
+filetype	fish	language	fishshell	Fish
+filetype	fortran	language	fortran	Fortran
+filetype	gas	language	assembly	Assembly
+filetype	git	language	git	Git
+filetype	git-attributes	language	git	Git
+filetype	git-commit	vcs	git	Git
+filetype	git-config	language	git	Git
+filetype	git-ignore	language	git	Git
+filetype	git-notes	vcs	git	Git
+filetype	git-rebase	vcs	git	Git
+filetype	gitsendemail	language	git	Git
+filetype	gleam	language	gleam	Gleam
+filetype	glsl	language	shader	GLSL
+filetype	go	language	go	Go
+filetype	gomod	language	go	Go
+filetype	gosum	language	go	Go
+filetype	gowork	language	go	Go
+filetype	graphql	language	graphql	GraphQL
+filetype	groovy	language	groovy	Groovy
+filetype	haskell	language	haskell	Haskell
+filetype	haskell-literate	language	haskell	Haskell
+filetype	hcl	language	hashicorp	HCL
+filetype	heex	language	phoenix	Phoenix
+filetype	hgcommit	language	mercurial	Mercurial
+filetype	hlsl	language	shader	HLSL
+filetype	html	language	html	HTML
+filetype	htmlcheetah	language	python	Python Cheetah
+filetype	htmldjango	language	django	Django HTML
+filetype	htmlm4	language	html	HTML M4
+filetype	http	language	link	HTTP
+filetype	hyprlang	language	hyprland	Hyprland
+filetype	image	language	picture	Image
+filetype	ini	language	settings	INI
+filetype	java	language	java	Java
+filetype	javascript	language	javascript	JavaScript
+filetype	jjdescription	vcs	git	Jujutsu
+filetype	json	language	json	JSON
+filetype	json5	language	json	JSON5
+filetype	jsonc	language	json	JSON
+filetype	jsx	language	react	JSX
+filetype	jule	language	jule	Jule
+filetype	julia	language	julia	Julia
+filetype	just	language	just	Just
+filetype	kotlin	language	kotlin	Kotlin
+filetype	lalrpop	language	rust	LALRPOP
+filetype	latex	language	latex	LaTeX
+filetype	less	language	less	Less
+filetype	logcheck	language	log	Logcheck
+filetype	lua	language	lua	Lua
+filetype	luau	language	luau	Luau
+filetype	mail	language	mail	Mail
+filetype	mailaliases	language	mail	Mail Aliases
+filetype	mailcap	language	mail	Mailcap
+filetype	make	language	make	Makefile
+filetype	markdown	language	markdown	Markdown
+filetype	matlab	language	matlab	MATLAB
+filetype	nasm	language	assembly	Assembly
+filetype	nest	language	nest	Nest
+filetype	nim	language	nim	Nim
+filetype	nix	language	nix	Nix
+filetype	nu	language	nushell	Nushell
+filetype	obj	language	assembly	Object
+filetype	objc	language	objc	Objective-C
+filetype	objcpp	language	cpp	Objective-C++
+filetype	objdump	language	assembly	Object Dump
+filetype	ocaml	language	ocaml	OCaml
+filetype	ocaml-interface	language	ocaml	OCaml
+filetype	odin	language	odin	Odin
+filetype	org	notes	org	Orgmode
+filetype	pascal	language	pascal	Pascal
+filetype	perl	language	perl	Perl
+filetype	php	language	php	PHP
+filetype	pip-requirements	language	python	Python Requirements
+filetype	powershell	language	powershell	PowerShell
+filetype	prisma	language	prisma	Prisma
+filetype	python	language	python	Python
+filetype	quarto	language	quarto	Quarto
+filetype	r	language	r	R 
+filetype	racket	language	racket	Racket
+filetype	ruby	language	ruby	Ruby
+filetype	rust	language	rust	Rust
+filetype	sass	language	sass	Sass
+filetype	scala	language	scala	Scala
+filetype	scheme	language	scheme	Scheme
+filetype	scss	language	sass	Sass
+filetype	solidity	language	solidity	Solidity
+filetype	sql	language	database	SQL
+filetype	squirrel	language	squirrel	Squirrel
+filetype	ssh_client_config	language	shell	SSH Config
+filetype	sshdconfig	language	shell	SSH Config
+filetype	svelte	language	svelte	Svelte
+filetype	swift	language	swift	Swift
+filetype	texmf	language	tex	TeX
+filetype	text	language	text	Plain Text
+filetype	tfvars	language	terraform	Terraform
+filetype	toml	language	toml	TOML
+filetype	tsx	language	react	TSX
+filetype	tt2html	language	perl	Perl TT2 HTML
+filetype	typescript	language	typescript	TypeScript
+filetype	typst	language	typst	Typst
+filetype	v	language	v	V 
+filetype	vim	language	viml	VimL
+filetype	viminfo	language	viml	VimL
+filetype	vue	language	vue	Vue
+filetype	wdiff	language	diff	Diff
+filetype	winbatch	language	shell	Batch
+filetype	xml	language	xml	XML
+filetype	yagpdbcc	language	yagpdb	YAGPDB Custom Command
+filetype	yaml	language	yaml	YAML
+filetype	zig	language	zig	Zig
+filename	.gemignore	language	rubygems	RubyGems
+filename	.mailmap	language	git	Mailmap
+filename	.npmrc	language	npm	npm
+filename	.npmignore	language	npm	npm
+filename	build.gradle	language	gradle	Gradle
+filename	build.gradle.kts	language	gradle	Gradle
+filename	cargo.toml	language	cargo	Cargo
+filename	gemfile	language	rubygems	RubyGems
+filename	license	language	license	License file
+filename	license.md	language	license	License file
+filename	license.txt	language	license	License file
+filename	package.json	language	npm	npm
+filename	pom.xml	language	maven	Maven
+filename	settings.gradle	language	gradle	Gradle
+filename	settings.gradle.kts	language	gradle	Gradle
+filename	vue.config.js	language	vue	Vue
+extension	.aab	language	android	Android App Bundle
+extension	.aar	language	android	Android Archive
+extension	.apk	language	android	Android Package Kit
+extension	.apks	language	android	Android Package Kit
+extension	.avd	language	android	Android Virtual Device
+extension	.bmp	language	picture	BMP
+extension	.bolt	language	bolt	Bolt
+extension	.component.css	language	angular	Angular
+extension	.component.html	language	angular	Angular
+extension	.component.js	language	angular	Angular
+extension	.component.less	language	angular	Angular
+extension	.component.scss	language	angular	Angular
+extension	.component.spec	language	angular	Angular
+extension	.component.ts	language	angular	Angular
+extension	.directive.js	language	angular	Angular
+extension	.directive.ts	language	angular	Angular
+extension	.fs	language	fsharp	F#
+extension	.fsi	language	fsharp	F#
+extension	.fsscript	language	fsharp	F#
+extension	.fsx	language	fsharp	F#
+extension	.gem	language	rubygems	RubyGems
+extension	.gemspec	language	rubygems	RubyGems
+extension	.gd	language	godot	Godot
+extension	.godot	language	godot	Godot
+extension	.gif	language	picture	GIF
+extension	.gml	language	gamemaker	GameMaker Language
+extension	.guard.js	language	angular	Angular
+extension	.guard.ts	language	angular	Angular
+extension	.heif	language	picture	HEIF
+extension	.hjmc	language	jmc	JMC
+extension	.hx	language	haxe	Haxe
+extension	.hxml	language	haxe	Haxe
+extension	.ico	language	picture	ICO
+extension	.interceptor.js	language	angular	Angular
+extension	.interceptor.ts	language	angular	Angular
+extension	.interface.js	language	angular	Angular
+extension	.interface.ts	language	angular	Angular
+extension	.ipynb	language	jupyter	Jupyter Notebook
+extension	.jmc	language	jmc	JMC
+extension	.jpeg	language	picture	JPEG
+extension	.jpg	language	picture	JPEG
+extension	.lock	language	lock	Lockfile
+extension	.log	language	log	Logs
+extension	.mcfunction	language	mcfunction	MCFunction
+extension	.model.js	language	angular	Angular
+extension	.model.ts	language	angular	Angular
+extension	.module.js	language	angular	Angular
+extension	.module.ts	language	angular	Angular
+extension	.obb	language	android	Android
+extension	.pcss	language	postcss	PostCSS
+extension	.pipe.js	language	angular	Angular
+extension	.pipe.ts	language	angular	Angular
+extension	.png	language	picture	PNG
+extension	.postcss	language	postcss	PostCSS
+extension	.service.js	language	angular	Angular
+extension	.service.ts	language	angular	Angular
+extension	.tiff	language	picture	TIFF
+extension	.vapi	language	vala	Vala
+extension	.vala	language	vala	Vala
+extension	.webp	language	picture	WebP
+extension	.xapk	language	android	Android Package Kit
+cord	Cord.new	language	text	New file
+cord	Cord.unknown	language	text	Unknown
+cli	lazygit	vcs	git	Lazygit
+cli	gitui	vcs	git	GitUI
+cli	tig	vcs	git	Tig
+cli	lazyjj	vcs	git	LazyJJ
+cli	jjui	vcs	git	jjui
+cli	yazi	file-browser	folder	Yazi
+cli	ranger	file-browser	folder	Ranger
+cli	nnn	file-browser	folder	nnn
+cli	lf	file-browser	folder	lf
+cli	joshuto	file-browser	folder	Joshuto
+cli	xplr	file-browser	folder	xplr
+cli	broot	file-browser	folder	Broot
+cli	vifm	file-browser	folder	Vifm
+cli	spf	file-browser	folder	Superfile
+cli	mc	file-browser	folder	Midnight Commander
+cli	tfm	file-browser	folder	TFM
+cli	fzf	file-browser	folder	fzf
+cli	man	docs	book	Man pages
+cli	tldr	docs	book	tldr
+cli	gdb	debug	bug	GNU Debugger
+cli	lldb	debug	bug	LLDB

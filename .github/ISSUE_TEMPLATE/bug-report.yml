@@ -6,16 +6,14 @@ body:
     attributes:
       label: "Checklist"
       options:
-        - label: "My problem isn't listed in the [Troubleshooting](https://github.com/vyfor/cord.nvim/wiki/Troubleshooting) section of the wiki"
+        - label: "I have looked through [existing issues](https://github.com/NikSneMC/cord.hx/issues)"
           required: true
-        - label: "I have looked through [existing issues](https://github.com/vyfor/cord.nvim/issues)"
-          required: true
-        - label: "I am aware of the recent [announcements](https://github.com/vyfor/cord.nvim/discussions/categories/announcements)"
+        - label: "I am using a Helix build with Steel plugin support"
           required: true
   - type: textarea
     attributes:
       label: "Description"
-      description: "Explain the issue you are facing. You may include any relevant logs, screenshots, etc. In case the bug is subtle or hard to spot, consider providing additional [logs](https://github.com/vyfor/cord.nvim/wiki/FAQ#logging-for-debugging)."
+      description: "Explain the issue you are facing. You may include any relevant logs, screenshots, etc. For subtle bugs, run Helix with `CORD_LOG_FILE=/tmp/cord.log CORD_LOG_LEVEL=trace` and attach the log."
       value: |
         <!-- describe the problem -->
 
@@ -32,28 +30,18 @@ body:
   - type: textarea
     attributes:
       label: "Debug information"
-      description: "Output of `:Cord debug copy`"
+      description: "Output of `:cord-debug-copy`"
       render: markdown
     validations:
       required: true
   - type: textarea
     attributes:
       label: "Minimal configuration"
-      description: "Minimal configuration to reproduce the issue"
+      description: "Minimal `init.scm` (or nhx configuration) that reproduces the issue"
       value: |
-        <!-- if possible, include steps to reproduce using this minimal config -->
-
-        ```lua
-        vim.env.LAZY_STDPATH = '.repro'
-        load(vim.fn.system 'curl -s https://raw.githubusercontent.com/folke/lazy.nvim/main/bootstrap.lua')()
-
-        require('lazy.minit').repro {
-          spec = {
-            {
-              'vyfor/cord.nvim',
-            },
-          },
-        }
+        ```scheme
+        (require "cord/cord.scm")
+        (cord-configure! (hash))
         ```
     validations:
       required: false

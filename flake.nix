@@ -1,60 +1,28 @@
 {
-  description = "A Nix-flake-based Rust development environment";
+  description = "Discord Rich Presence for Helix (Steel plugin)";
 
   inputs = {
-    nixpkgs.url = "https://flakehub.com/f/NixOS/nixpkgs/0.1.*.tar.gz";
-    rust-overlay = {
-      url = "github:oxalica/rust-overlay";
+    nhx.url = "github:Ra77a3l3-jar/nhx";
+
+    nixpkgs.follows = "nhx/nixpkgs";
+
+    flake-compat.url = "github:NixOS/flake-compat";
+    systems.url = "github:nix-systems/default";
+
+    flake-parts = {
+      url = "github:hercules-ci/flake-parts";
+      inputs.nixpkgs-lib.follows = "nixpkgs";
+    };
+
+    naersk = {
+      url = "github:nix-community/naersk";
       inputs.nixpkgs.follows = "nixpkgs";
     };
   };
 
-  outputs = {
-    self,
-    nixpkgs,
-    rust-overlay,
-  }: let
-    supportedSystems = ["x86_64-linux" "aarch64-linux" "x86_64-darwin" "aarch64-darwin"];
-    forEachSupportedSystem = f:
-      nixpkgs.lib.genAttrs supportedSystems (system:
-        f {
-          pkgs = import nixpkgs {
-            inherit system;
-            overlays = [rust-overlay.overlays.default self.overlays.default];
-          };
-        });
-  in {
-    overlays.default = final: prev: {
-      rustToolchain = let
-        rust = prev.rust-bin;
-      in
-        if builtins.pathExists ./rust-toolchain.toml
-        then rust.fromRustupToolchainFile ./rust-toolchain.toml
-        else if builtins.pathExists ./rust-toolchain
-        then rust.fromRustupToolchainFile ./rust-toolchain
-        else
-          rust.stable.latest.default.override {
-            extensions = ["rust-src" "rustfmt"];
-          };
+  outputs = inputs:
+    inputs.flake-parts.lib.mkFlake {inherit inputs;} {
+      systems = import inputs.systems;
+      imports = [./nix];
     };
-
-    devShells = forEachSupportedSystem ({pkgs}: {
-      default = pkgs.mkShell {
-        packages = with pkgs; [
-          rustToolchain
-          openssl
-          pkg-config
-          cargo-deny
-          cargo-edit
-          cargo-watch
-          rust-analyzer
-        ];
-
-        env = {
-          # Required by rust-analyzer
-          RUST_SRC_PATH = "${pkgs.rustToolchain}/lib/rustlib/src/rust/library";
-        };
-      };
-    });
-  };
 }

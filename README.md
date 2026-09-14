@@ -1,198 +1,319 @@
-<div align="center">
-  <h1>🧩 <strong>Cord</strong> – Tailor Your Presence Like Never Before</h1>
-  <div>
-    <a href="https://github.com/vyfor/cord.nvim/stargazers"><img src="https://img.shields.io/github/stars/vyfor/cord.nvim?style=for-the-badge&color=8281f3&labelColor=242529&v=2&logo=data:image/svg%2bxml;base64,PHN2ZyB3aWR0aD0iODAwcHgiIGhlaWdodD0iODAwcHgiIGZpbGw9Im5vbmUiIHZpZXdCb3g9IjAgMCAyNCAyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJtMTEuMDc1IDMuMjU1OGMwLjMzOTMtMC44MjczOCAxLjUxMTEtMC44MjczOCAxLjg1MDQgMGwxLjcyNDEgNC4yMDM3YzAuMTQzNyAwLjM1MDI0IDAuNDcyOCAwLjU4OTM0IDAuODUwMiAwLjYxNzcybDQuNTMwOCAwLjM0MDcxYzAuODkxNyAwLjA2NzA2IDEuMjUzOCAxLjE4MTQgMC41NzE4IDEuNzU5OGwtMy40NjUyIDIuOTM4OGMtMC4yODg3IDAuMjQ0OC0wLjQxNDQgMC42MzE3LTAuMzI0NyAwLjk5OTVsMS4wNzYgNC40MTQzYzAuMjExOCAwLjg2ODgtMC43MzYyIDEuNTU3NS0xLjQ5NyAxLjA4NzZsLTMuODY1Ny0yLjM4NzVjLTAuMzIyMS0wLjE5ODktMC43Mjg5LTAuMTk4OS0xLjA1MSAwbC0zLjg2NTcgMi4zODc1Yy0wLjc2MDg1IDAuNDY5OS0xLjcwODgtMC4yMTg4LTEuNDk3LTEuMDg3NmwxLjA3Ni00LjQxNDNjMC4wODk2NS0wLjM2NzgtMC4wMzYwNS0wLjc1NDctMC4zMjQ3Ni0wLjk5OTVsLTMuNDY1Mi0yLjkzODhjLTAuNjgyMDItMC41NzgzOC0wLjMxOTk0LTEuNjkyOCAwLjU3MTgxLTEuNzU5OGw0LjUzMDgtMC4zNDA3MWMwLjM3NzQ4LTAuMDI4MzggMC43MDY1OC0wLjI2NzQ4IDAuODUwMjItMC42MTc3MmwxLjcyNDEtNC4yMDM3eiIgc3Ryb2tlPSIjODI4MWYzIiBzdHJva2Utd2lkdGg9IjIiLz48L3N2Zz4=" alt="Stargazers"></a>
-    <a href="https://neovim.io/"><img src="https://img.shields.io/badge/Neovim-%20%3E%3D%200.6.0-ffffff?style=for-the-badge&logo=neovim&color=8281f3&labelColor=242529&logoColor=8281f3" alt="Neovim Logo"></a>
-    <a href="https://github.com/vyfor/cord.nvim/forks"><img src="https://img.shields.io/github/forks/vyfor/cord.nvim?style=for-the-badge&color=8281f3&labelColor=242529&v=3&logo=data:image/svg%2bxml;base64,PHN2ZyBmaWxsPSIjODI4MWYzIiB2aWV3Qm94PSItNCAtMiAyNCAyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNOCAxOGExIDEgMCAxIDAgMC0yIDEgMSAwIDAgMCAwIDJ6bTEuMDMzLTMuODE3QTMuMDAxIDMuMDAxIDAgMSAxIDcgMTQuMTd2LTEuMDQ3YzAtLjA3NC4wMDMtLjE0OC4wMDgtLjIyMWExIDEgMCAwIDAtLjQ2Mi0uNjM3TDMuNDYgMTAuNDJBMyAzIDAgMCAxIDIgNy44NDVWNS44MjlhMy4wMDEgMy4wMDEgMCAxIDEgMiAwdjIuMDE2YTEgMSAwIDAgMCAuNDg3Ljg1OGwzLjA4NiAxLjg0NmEzIDMgMCAwIDEgLjQ0My4zMjQgMyAzIDAgMCAxIC40NDQtLjMyNGwzLjA4Ni0xLjg0NmExIDEgMCAwIDAgLjQ4Ny0uODU4VjUuODQxQTMuMDAxIDMuMDAxIDAgMCAxIDEzIDBhMyAzIDAgMCAxIDEuMDMzIDUuODE3djIuMDI4YTMgMyAwIDAgMS0xLjQ2IDIuNTc1bC0zLjA4NiAxLjg0NmExIDEgMCAwIDAtLjQ2Mi42MzdjLjAwNS4wNzMuMDA4LjE0Ny4wMDguMjJ2MS4wNnpNMyA0YTEgMSAwIDEgMCAwLTIgMSAxIDAgMCAwIDAgMnptMTAgMGExIDEgMCAxIDAgMC0yIDEgMSAwIDAgMCAwIDJ6Ii8+PC9zdmc+&v=2" alt="Forks"></a>
-  </div>
-  <br/>
-  <img src="https://github.com/user-attachments/assets/8e684058-f3ea-4010-817e-529b47730abb" alt="Cord Logo" width="200px">
-  <h3>🚀 The most extensible Discord Rich Presence plugin for Neovim, powered by Rust.
-  </h3>
-  <img src="https://raw.githubusercontent.com/vyfor/icons/master/.github/assets/main_banner.png?v=2" alt="Cord Banner">
-</div>
+# cord.hx
 
-<div align="center">
-  <div><a href="https://discord.gg/q9rC4bjCHv"><img src="https://discord.com/api/guilds/1322899307925602366/widget.png?style=banner2" alt="cord.nvim"/></a></div>
-</div>
+Discord Rich Presence for [Helix](https://helix-editor.com). A port of
+[cord.nvim](https://github.com/vyfor/cord.nvim).
 
----
+The plugin is a thin Steel layer over a native core (`libcord_hx`) that keeps running across
+Steel engine reloads (`:config-reload`, trusting a workspace), so the presence and its timestamp
+survive them.
 
-<div align="center">
-  
-  **[<kbd>&nbsp;<br>&nbsp;Installation&nbsp;<br>&nbsp;</kbd>](#-installation)**&emsp;
-  **[<kbd>&nbsp;<br>&nbsp;Configuration&nbsp;<br>&nbsp;</kbd>](https://github.com/vyfor/cord.nvim/wiki/Configuration)**&emsp;
-  **[<kbd>&nbsp;<br>&nbsp;Examples&nbsp;<br>&nbsp;</kbd>](https://github.com/vyfor/cord.nvim/wiki/Examples)**&emsp;
-  
-</div>
+It requires a Helix build with Steel plugin support, such as
+[steelix](https://github.com/mattwparas/helix/tree/steel-event-system).
 
----
+- One shared server keeps a single Discord connection for every Helix instance.
+- Idle detection hands the presence over to the most recently active instance.
+- 130+ icons in several themes, plus variables, per-workspace rules, buttons and hooks.
+- Built-in extensions: diagnostics, Last.fm, tmux, zellij and more.
 
-> [!IMPORTANT]
-> Cord does **not** require Rust to be installed.
+## Installation
 
-## 💎 Features
-- ⚡ Fast, lightweight, and batteries included.
-- 🚀 [Rate-limit](https://github.com/vyfor/cord.nvim/wiki/FAQ#q-rich-presence-updates-take-a-long-time-to-appear-in-discord-why) aware, event-driven architecture.
-- 🎨 Dynamic string templates with custom variables.
-- 🗃️ Customizable assets for any file/buffer type.
-- 🔧 Flexible configuration with rich API, function-based fields, hooks, user commands and custom IPC paths.
-- 🔌 Extension system of its own, with many extensions out-of-the-box.
-- 🛠️ Finds repositories and workspaces based on VCS files without relying on command-line tools.
-- 🧠 Manages activities across all instances with a single connection to Discord.
-- 💤 Detects when you're idle and switches to the most recent active instance.
-- 🎯 [Async](https://github.com/vyfor/cord.nvim/wiki/Async)-first design with an async-aware configuration layer.
-- 📦 Works with different Discord setups (Snap, Flatpak, [WSL](https://github.com/vyfor/cord.nvim/wiki/Special-Environments#-running-inside-wsl), and even the [~~browser~~](https://github.com/vyfor/cord.nvim/wiki/Special-Environments#-using-discord-in-a-browser)).
-- 🌍 Runs on Windows, Linux, macOS, and FreeBSD.
-- 🌸 Includes 140+ icons for 200+ file types and plugins, featured in distinct [themes](#-themes) and flavors.
-- 🔁 [Reconnects](https://github.com/vyfor/cord.nvim/wiki/Examples#reconnecting-to-discord) automatically if connection to Discord is lost.
+### forge
 
-## 📦 Installation
+```sh
+forge pkg install --git https://github.com/NikSneMC/cord.hx.git
+```
 
-> [!NOTE]
-> **cord.nvim** will automatically load with defaults; calling `setup()` is optional.
-> The default configuration is found [here](https://github.com/vyfor/cord.nvim/wiki/Configuration#%EF%B8%8F-default-configuration).
+Forge builds the `libcord_hx` dylib and the `cord` server in one cargo build. The plugin finds
+the server in forge's build directory, then in `PATH`. To use a binary installed elsewhere, set
+`'advanced (hash 'server (hash 'executable-path "<prefix>"))`; the plugin then runs `<prefix>/bin/cord`.
 
-<details>
-<summary><strong>lazy.nvim</strong></summary>
+Then, in `init.scm`:
 
-```lua
+```scheme
+(require "cord/cord.scm")
+```
+
+cord starts once `init.scm` has been evaluated. Configuring it is optional.
+
+### Nix (Home Manager with nhx)
+
+cord plugs into [nhx](https://github.com/Ra77a3l3-jar/nhx) as a regular plugin: import the module
+next to nhx's and configure it under `programs.nhx.plugins.cord`:
+
+```nix
+# flake.nix
+inputs.cord-hx = {
+  url = "github:NikSneMC/cord.hx";
+  inputs.nhx.follows = "nhx";
+};
+```
+
+```nix
 {
-  'vyfor/cord.nvim'
+  imports = [
+    inputs.nhx.homeManagerModules.default
+    inputs.cord-hx.homeManagerModules.default
+  ];
+
+  programs.nhx = {
+    enable = true;
+    steel.enable = true;
+
+    plugins.cord = {
+      enable = true;
+      config = {
+        display.theme = "catppuccin";
+        idle.timeout = 600000;
+        timestamp.resetOnIdle = true;
+        text.workspace = { __raw = "(lambda (opts) \"Hacking\")"; };
+        workspaceRules = [
+          { glob = "^~/Projects/[^/]+/work"; details = "Probably some work-related stuff"; state = false; }
+          { glob = [ "^~/Projects/public" "^~/Projects/contrib" ]; details = "\${workspace}"; }
+          { path = "~/Projects/secret-project"; visible = false; }
+        ];
+        extensions = {
+          diagnostics.enable = true;
+          localTime = { enable = true; affectIdle = false; };
+        };
+      };
+    };
+  };
 }
 ```
 
-> #### ⚙️ Configuring
-> ```lua
-> {
->   'vyfor/cord.nvim',
->    ---@type CordConfig
->   opts = {
->     -- ...
->   }
-> }
-> ```
+The options mirror the Scheme configuration below, named in camelCase like other nhx plugin
+options: `swap-fields?` is `swapFields`, `advanced.plugin.cursor-update` is
+`advanced.plugin.cursorUpdate`, and enumerations are strings (`logLevel = "debug"`). Extensions
+are enabled with `enable`, and their options follow the same naming
+(`scopedTimestamps = { enable = true; pause = false; }`). Procedures, for text options
+and `hooks`, are written as `{ __raw = "(lambda (opts) ...)"; }`.
 
-</details>
+## Configuration
 
-<details>
-<summary><strong>packer.nvim</strong></summary>
-
-```lua
-use {
-  'vyfor/cord.nvim'
-}
+```scheme
+(cord-configure!
+ (hash 'display (hash 'theme 'catppuccin 'flavor 'accent)
+       'idle (hash 'timeout 600000)
+       'text (hash 'workspace (lambda (opts) (string-append "In " (hash-ref opts 'workspace))))
+       'extensions (list 'diagnostics)))
 ```
 
-> #### ⚙️ Configuring
-> ```lua
-> use {
->   'vyfor/cord.nvim',
->   config = function()
->     require('cord').setup {
->       -- ...
->     }
->   end
-> }
-> ```
+Every key is optional, and the configuration is merged with the defaults. Keys are kebab-case
+symbols, options ending in `?` take booleans, and enumerations take symbols (strings work too).
 
-</details>
+| Option | Default | Description |
+| --- | --- | --- |
+| `'enabled?` | `#t` | Start cord |
+| `'log-level` | `'off` | `'trace` `'debug` `'info` `'warn` `'error` `'off` |
+| `'editor` | | `'client` (`'auto`, `'helix`, `'nova` for [Yazelix Nova](https://nova.yazelix.com) or a Discord application ID string; `'auto` picks Nova inside Nova, Helix otherwise), `'tooltip`, `'icon` (both default to the client's) |
+| `'display` | | `'theme` (`'default` `'atom` `'catppuccin` `'minecraft` `'void` `'classic`), `'flavor` (`'dark` `'light` `'accent`), `'view` (`'full` `'editor` `'asset` `'auto`), `'swap-fields?`, `'swap-icons?` |
+| `'timestamp` | | `'enabled?`, `'reset-on-idle?`, `'reset-on-change?`, `'shared?` |
+| `'idle` | | `'enabled?`, `'timeout` (ms), `'show-status?`, `'ignore-focus?`, `'unidle-on-focus?`, `'smart-idle?`, `'details`, `'state`, `'tooltip`, `'icon` |
+| `'text` | | `'default`, `'workspace`, `'viewing`, `'editing`, `'file-browser`, `'plugin-manager`, `'lsp`, `'docs`, `'vcs`, `'notes`, `'debug`, `'test`, `'games`, `'diagnostics`, `'terminal`, `'dashboard` |
+| `'buttons` | `'()` | Up to 2 `(hash 'label ... 'url ...)` |
+| `'assets` | | Hash map from Helix language name, file name or extension (strings) to an icon URL or `(hash 'icon 'tooltip 'name 'text 'type)` |
+| `'variables` | | `#t` enables `${name}` placeholders, or a hash map of extra variables |
+| `'workspace-rules` | `'()` | See below |
+| `'hooks` | | See below |
+| `'extensions` | `'()` | See below |
+| `'advanced` | | `'plugin` (`'autocmds?`, `'cursor-update` `'on-hold`/`'on-move`/`'none`, `'match-in-mappings?`, `'debounce` `(hash 'delay 'interval)`), `'server` (`'pipe-path`, `'executable-path`, `'timeout`), `'discord` (`'pipe-paths`, `'reconnect`, `'sync`), `'workspace` (`'root-markers`, `'limit-to-cwd?`) |
 
-<details>
-<summary><strong>rocks.nvim</strong></summary>
+Option values may be procedures. A procedure receives `opts`, a hash map with
+`'filename`, `'filetype`, `'buftype`, `'read-only?`, `'workspace` (repository name), `'worktree` (linked git
+worktree name, if any), `'workspace-dir`, `'repo-url`, `'cursor-line`, `'cursor-column` (1-based),
+`'cursor-char` (0-based), `'idle?`, `'focused?`, `'timestamp`, `'buttons`, `'type`, `'icon`, `'text`,
+`'name` and `'tooltip`, plus the configured variables.
+Text options may also return `#t` to skip an update or `#f` to clear the activity.
 
-Cord is available on [LuaRocks](https://luarocks.org/modules/vyfor/cord.nvim).
+### Workspace rules
 
-```vim
-:Rocks install cord.nvim
+Workspace rules change the activity per workspace. The first matching rule wins. A rule matches
+with any combination of these, all of which have to match:
+
+| Key | Matches |
+| --- | --- |
+| `'path` | the workspace directory, exactly (a string or a list) |
+| `'name` | the workspace (repository) name (a string or a list) |
+| `'glob` | a regex (or a list) against the buffer path, or the workspace directory for buffers without a file |
+| `'predicate` | a procedure receiving `(hash 'workspace 'workspace-dir 'filename 'path)` |
+
+A leading `~` in `'path` and `'glob` stands for the home directory. A matching rule may set:
+
+- `'details` and `'state`: templates (`${...}` placeholders are always substituted), procedures,
+  or `#f` to omit the line.
+- `'visible? #f`: hide the presence while the rule matches, letting other editor instances show
+  theirs. It comes back when no hiding rule matches anymore, unless it was hidden with a command.
+
+```scheme
+'workspace-rules
+(list (hash 'path "~/Projects/secret" 'visible? #f)
+      (hash 'glob "^~/Projects/work" 'details "Probably some work-related stuff" 'state #f)
+      (hash 'glob (list "^~/Projects/public" "^~/Projects/contrib")
+            'details "${workspace}"
+            'state "Editing ${filename} ${cursor-line}:${cursor-column}"))
 ```
 
-> #### ⚙️ Configuring
-> ```lua
-> require('cord').setup {
->   -- ...
-> }
-> ```
+### Hooks
 
-</details>
+`'hooks` maps an event to a procedure, or to `(hash 'callback f 'priority n)`.
 
-<details>
-<summary><strong>vim.pack (v0.12+)</strong></summary>
+| Event | Arguments | Return value |
+| --- | --- | --- |
+| `'pre-activity` | `opts` | new `opts`, or anything else to keep them |
+| `'post-activity` | `opts activity` | new activity, or anything else to keep it |
+| `'ready`, `'buf-enter`, `'focus-gained`, `'focus-lost` | manager state: `(hash 'ready? 'paused? 'idle? 'focused?)` | ignored |
+| `'workspace-change`, `'idle-enter`, `'idle-leave` | `opts` | ignored |
+| `'shutdown` | none | ignored |
 
-```lua
-vim.pack.add { 'https://github.com/vyfor/cord.nvim' }
+```scheme
+'hooks (hash 'post-activity
+             (lambda (opts activity)
+               (hash-insert activity 'state "Hacking")))
 ```
 
-> #### ⚙️ Configuring
-> ```lua
-> require('cord').setup {
->   -- ...
-> }
-> ```
+Procedures run in the editor; the native core waits for their results, so keep them quick. Commands
+other than `cord`, `cord-enable`, `cord-disable` and `cord-toggle` ignore their arguments, so they
+can be used as hooks (`'idle-leave cord-restart`).
 
-</details>
+### API
 
-<details>
-<summary><strong>Vim packages</strong></summary>
+`cord/api.scm` provides functions for procedures and hooks:
 
-**Unix:**
-```bash
-git clone https://github.com/vyfor/cord.nvim ~/.local/share/nvim/site/pack/plugins/start/cord.nvim
+| Function | |
+| --- | --- |
+| `(cord-queue-update! [force])` | queue an activity update |
+| `(cord-skip-update!)` | skip the next update (in `'post-activity`: the one being built) |
+| `(cord-set-activity! activity [force])` | send an activity (`'details`, `'state`, `'details-url`, `'assets` with `'large-image`/`'large-url`/..., `'timestamps`, `'buttons`, `'type`, `'status-display-type`, `'idle?`) |
+| `(cord-clear-activity! [force])` | clear the activity (`#t`: clear the presence completely) |
+| `(cord-hide!)`, `(cord-suppress!)`, `(cord-resume!)`, `(cord-toggle!)`, `(cord-toggle-suppress!)` | control the presence |
+| `(cord-pause!)`, `(cord-pause-events!)`, `(cord-resume-events!)` | stop handling events |
+| `(cord-idle!)`, `(cord-force-idle!)`, `(cord-unidle!)`, `(cord-toggle-idle! [force])` | control the idle state |
+| `(cord-icon name [theme flavor])` | URL of a built-in icon |
+| `(cord-run command [cwd ttl])` | cached output of a command (see below) |
+
+Manager functions called from a procedure run once it returns, before cord continues.
+
+Procedures must not wait for processes. `cord-run` returns the last trimmed output of a command
+right away (`#f` while none has finished or the last run failed) and reruns it in the background
+once it is older than `ttl` seconds (default 30); the activity is updated when the output changes:
+
+```scheme
+(require "cord/api.scm")
+
+(cord-configure!
+ (hash 'idle (hash 'icon (cord-icon "keyboard" "atom"))
+       'text (hash 'workspace
+                   (lambda (opts)
+                     (let ([branch (cord-run '("git" "branch" "--show-current")
+                                             (hash-ref opts 'workspace-dir) 60)])
+                       (string-append "In " (hash-ref opts 'workspace)
+                                      (if branch (string-append " (" branch ")") "")))))
+       'hooks (hash 'workspace-change
+                    (lambda (opts)
+                      (if (equal? (hash-ref opts 'workspace) "notes") (cord-hide!) (cord-resume!))))))
 ```
 
-**Windows (PowerShell):**
-```powershell
-git clone https://github.com/vyfor/cord.nvim $LOCALAPPDATA/nvim-data/site/pack/plugins/start/cord.nvim
+To start cord later, configure `'enabled? #f` and call `cord-configure!` again when needed.
+
+### Extensions
+
+```scheme
+'extensions (list 'diagnostics
+                  (list 'tmux (hash 'interval 5000))
+                  my-extension)
 ```
 
-> #### ⚙️ Configuring
-> ```lua
-> require('cord').setup {
->   -- ...
-> }
-> ```
+Built-in extensions:
 
-</details>
+- `'diagnostics`: appends the problem count.
+- `'lastfm`: shows the track playing on Last.fm.
+- `'local-time`: uses the local time of day as the timestamp.
+- `'persistent-timer`: accumulates time per workspace across sessions.
+- `'scoped-timestamps`: keeps a separate timestamp per buffer or workspace.
+- `'resolver`: detects NestJS projects.
+- `'tmux` and `'zellij`: hide the presence while the session is detached, and show commands
+  focused next to Helix in the same window or tab (`lazygit`, `yazi`, `man`, ...). Using such a
+  command is invisible to Helix: once another editor instance has taken the presence over,
+  returning to the command shows it again only after it changes, is reopened or the session is
+  attached again.
 
-<details>
-<summary><strong>Considerations</strong></summary>
+Their options are documented at the top of each file in `src/plugin/extensions/` (`multiplexer.rs`
+for tmux and zellij). Icons for languages, file names and commands are listed in
+`src/plugin/mappings.tsv`.
 
-Cord requires the **server executable** to be present. By default, the plugin will fetch it from GitHub, which requires a dependency on [**`curl`**](https://curl.se).
-  
-If preferred, the server can be built from source. Run `:Cord update install` to install from crates.io or `:Cord update build` to build from source locally.
+A custom extension is a hash map with `'name` and optional `'variables`, `'hooks`, `'assets`
+and `'config`. It may instead have a `'setup` procedure that takes the configuration and
+returns the extension.
 
-> Note: If you decide to build from source, it is your responsibility to keep the server binary up-to-date.
+### Icons
 
-</details>
+Icons are served from [NikSneMC/cord-icons](https://github.com/NikSneMC/cord-icons), a fork of
+[vyfor/icons](https://github.com/vyfor/icons) (the icons of cord.nvim) that adds Helix and Yazelix
+Nova and drops the Neovim ones.
 
-See the [Examples](https://github.com/vyfor/cord.nvim/wiki/Examples) to get started.
-Ask any questions in [Discussions](https://github.com/vyfor/cord.nvim/discussions).
+## Coming from cord.nvim
 
-## 🎨 Themes
+Most cord.nvim configurations translate directly:
 
-Cord features over 140 meticulously crafted icons available in distinct themes:
+- Lua tables become hash maps with kebab-case symbols, and booleans end in `?`:
+  `display = { swap_fields = true }` is `'display (hash 'swap-fields? #t)`.
+- `function(opts) ... end` is `(lambda (opts) ...)`, and `opts.filename` is
+  `(hash-ref opts 'filename)`.
+- `extensions = { diagnostics = { scope = 'workspace' } }` is
+  `'extensions (list (list 'diagnostics (hash 'scope 'workspace)))`, with the same extension
+  names. The diagnostics `severity` is a symbol (`'error`), not a `{ min = ... }` table.
+- The manager functions (`queue_update`, `set_activity`, `skip_update`, `hide`, `idle`, ...) are
+  in `cord/api.scm` as `cord-queue-update!`, `cord-set-activity!`, and so on.
+- Shell calls such as `vim.fn.system` must not block: use `cord-run`. `vim.version()` becomes
+  `(cord-run '("hx" "--version"))`.
+- Helix has no Neovim plugin buffers (Telescope, lazy.nvim, Mason, ...) and no terminal buffers, so
+  `'buftype` is always empty. Tools running in panes next to Helix are reported by the `'tmux` and
+  `'zellij` extensions instead.
 
-- **Default**: A stylish theme based on [Nerd Fonts](https://github.com/ryanoasis/nerd-fonts) icons.
-  <img width="800px" alt="Default Theme" src="https://raw.githubusercontent.com/vyfor/icons/master/.github/assets/default_theme.png" />
-- **Atom**: A sleek theme based on [Atom Material Icons](https://github.com/AtomMaterialUI/a-file-icon-vscode/).
-  <img width="800px" alt="Atom Theme" src="https://raw.githubusercontent.com/vyfor/icons/master/.github/assets/atom_theme.png">
-- **Catppuccin**: A soothing pastel theme based on [Catppuccin](https://github.com/catppuccin/vscode-icons) icons.
-  <img width="800px" alt="Catppuccin Theme" src="https://raw.githubusercontent.com/vyfor/icons/master/.github/assets/catppuccin_theme.png" />
-- **Minecraft**: A blocky pixel-art set based on [Datapack Icons](https://github.com/FuncFusion/mc-dp-icons).
-  <img width="800px" alt="Minecraft Theme" src="https://raw.githubusercontent.com/vyfor/icons/master/.github/assets/minecraft_theme.png" />
-- **Void**: A monochrome set defined by negative space.
-  <img width="800px" alt="Void Theme" src="https://raw.githubusercontent.com/vyfor/icons/master/.github/assets/void_theme.png" />
-- **Classic**: A clean theme featuring widely recognized icons.
-  <img width="800px" alt="Classic Theme" src="https://raw.githubusercontent.com/vyfor/icons/master/.github/assets/classic_theme.png?v=2" />
+The `visibility` plugin is replaced by workspace rules with `'visible? #f`. A blacklist is a list
+of hiding rules:
 
-See the [showcase](https://github.com/vyfor/icons#showcase) for an extended comparison.
+```scheme
+'workspace-rules (list (hash 'glob (list "^~/Projects/work" "^~/Projects/secret") 'visible? #f))
+```
 
-> [!TIP]
-> Each theme includes multiple flavors, typically `dark`, `light`, and `accent`, representing the background color of the icons.
-> Choose your theme in the [`display`](https://github.com/vyfor/cord.nvim/wiki/Configuration#-display) configuration option. More themes are coming soon!
-> | Atom (Light) | Minecraft (Dark) |
-> | :---: | :---: |
-> | <img src="https://raw.githubusercontent.com/vyfor/icons/master/.github/assets/atom_theme_2.png" width="400" /> | <img src="https://raw.githubusercontent.com/vyfor/icons/master/.github/assets/minecraft_theme_2.png" width="400" /> |
+A whitelist relies on the first matching rule winning: rules for the allowed workspaces come
+first, and a rule matching everything hides the rest:
 
-## ❤️ Support the Project
-I'm the sole maintainer of cord.nvim and dedicate much of my free time to this project. If you find Cord helpful, you can show your support by starring the repo or [sponsoring me on GitHub](https://github.com/sponsors/vyfor). Every bit of support helps me continue to improve and maintain Cord for everyone. Thank you!
+```scheme
+'workspace-rules (list (hash 'glob (list "^~/Projects/public" "^~/Projects/contrib"))
+                       (hash 'glob "" 'visible? #f))
+```
+
+Its `action` and `fallback` procedures become `'predicate` rules, or hooks calling
+`cord-hide!` and `cord-resume!`.
+
+## Commands
+
+| Command | Description |
+| --- | --- |
+| `:cord-presence-show` / `-hide` / `-suppress` / `-toggle` / `-toggle-suppress` | Control the presence |
+| `:cord-idle` / `:cord-unidle` / `:cord-idle-toggle` / `:cord-idle-force` | Control the idle state |
+| `:cord-enable` / `:cord-disable` / `:cord-toggle` `[idle]` | The presence, or a feature |
+| `:cord-status` / `:cord-version` | Connection status and server version |
+| `:cord-restart` / `:cord-reconnect` / `:cord-shutdown` | Manage the server |
+| `:cord-health` / `:cord-debug` / `:cord-debug-copy` | Health and debug reports |
+| `:cord <command> [args]` | The same commands, as in cord.nvim (`:cord presence hide`) |
+
+See `keybindings-example.scm` for a keymap.
+
+## Logging
+
+Set `CORD_LOG_FILE` to write logs to a file, and `CORD_LOG_LEVEL` (e.g. `trace`) to override the
+configured level.
+
+## Development
+
+- `nix develop` gives you the toolchain and `steel`.
+- `cargo build --release` builds the dylib and the server.
+- `cargo test --lib` runs the tests.
+- `nix flake check` runs the same tests in a sandbox.
+
+## License
+
+Apache-2.0

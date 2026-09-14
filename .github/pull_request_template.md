@@ -2,9 +2,9 @@
 
 <!-- Please check all requirements are met using [x] -->
 
-- [ ] I have read the [contribution guidelines](https://github.com/vyfor/cord.nvim/wiki/Contributing).
 - [ ] My PR title & commit messages follow the [Conventional Commits](https://www.conventionalcommits.org/) spec.
-- [ ] I have linted, formatted, and tested my changes.
+- [ ] `cargo fmt`, `cargo clippy` and `nix flake check` pass.
+- [ ] I have tested my changes in Helix.
 
 ## 📝 Description
 
