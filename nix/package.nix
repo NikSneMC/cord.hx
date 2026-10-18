@@ -20,7 +20,7 @@
         find $out -type f \( -path '*/bin/*' -o -name '*${sharedLibrary}' \) \
           -exec remove-references-to -t ${toolchain} {} +
       '';
-      disallowedReferences = [toolchain];
+      overrideMain = _: {disallowedReferences = [toolchain];};
     };
 
     nativeLib = runCommand "cord-hx-native" {} ''
